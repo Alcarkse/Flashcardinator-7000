@@ -35,3 +35,5 @@ User changes filtering specifications (enable/disable category)
 1) Client sends AJAX request with filtering specifications
 2) PHP responds to the request in the same way as CASE 1
 3) Client updates the information displayed
+
+C'est null c'est tout en chinois
