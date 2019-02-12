@@ -109,7 +109,7 @@ button[name="next"]:focus {
   background-color: #d54242;
   z-index: 2;
   padding: 0 1.5em;
-  box-shadow: 1em 0 3em 0 rgba(124, 21, 36, .4);
+  box-shadow: 1em 0 3em 0 rgba(4, 21, 36, .4);
 }
 #menu.hidden {
   width: 0;
