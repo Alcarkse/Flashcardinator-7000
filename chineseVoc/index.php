@@ -9,12 +9,11 @@
 </head>
 
 <body>
-
-    <h1 id="title">Flashcardinator-700</h1>
-    <div id="languageSelection">
-        <button class="highlightButton" id="zh" lang="zh">中国语</button>
-        <button class="highlightButton" id="jp" lang="jp">日本語</button>
-    </div>
+<h1 id="title">Flashcardinator-700</h1>
+<div id="languageSelection">
+    <a href="Flashcard.php?lang=zh"><button class="highlightButton" id="zh">中国语</button></a>
+    <a href="Flashcard.php?lang=jp"><button class="highlightButton" id="jp">日本語</button></a>
+</div>
 </body>
 
 </html>
