@@ -1,9 +1,9 @@
 <?php
-var lang = $_GET[lang];
-var cookieExist = true;
+$lang = $_GET["lang"];
+$cookieExist = true;
 
-if(!cookieExists){
-    header('location: Login.php')
+if($cookieExists == false){
+    header('location: Login.php');
 }
 
 ?>

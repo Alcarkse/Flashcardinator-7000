@@ -10,10 +10,10 @@
 
 <body>
 <div id="languageSelection">
-<a href="Flashcard.php?lang=zh">
+<a href="Flashcards.php?lang=zh">
     <button class="highlightButton" id="zh">中国语</button>    
 </a>
-<a href="Flashcard.php?lang=jp">
+<a href="Flashcards.php?lang=jp">
     <button class="highlightButton" id="jp">日本語</button>
 </a>
 </div>
