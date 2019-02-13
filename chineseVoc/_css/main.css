@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Noto Sans Regular';
-    src: url(fonts/NotoSansCJKsc-Regular.otf);
-  }
-  @font-face {
-    font-family: 'Noto Sans Light';
-    src: url(fonts/NotoSansCJKsc-Light.otf);
-  }
+font-family: 'Noto Sans Regular';
+src: url(fonts/NotoSansCJKsc-Regular.otf);
+}
+@font-face {
+font-family: 'Noto Sans Light';
+src: url(fonts/NotoSansCJKsc-Light.otf);
+}
 
 * {
     box-sizing: border-box;
@@ -40,4 +40,21 @@ body {
     border-radius: 50rem;
     background-color: crimson;
     color: white;
+    transition: 0.2s;
+}
+
+.highlightButton:hover {
+    background-color: rgb(240, 80, 112);
+    color: rgb(255, 202, 212);
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+#title {
+    position: absolute;
+    width: 100vw;
+    text-align: center;
 }
