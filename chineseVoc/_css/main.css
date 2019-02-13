@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Noto Sans Regular';
+    src: url(fonts/NotoSansCJKsc-Regular.otf);
+  }
+  @font-face {
+    font-family: 'Noto Sans Light';
+    src: url(fonts/NotoSansCJKsc-Light.otf);
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+[lang="zh"], [lang="jp"] {
+    font-family: 'Noto Sans Regular';
+}
+
+#languageSelection {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlightButton:first-of-type {
+    margin-right: 3em;
+}
+
+.highlightButton {
+    border: none;
+    padding: 1em 2em;
+    font-size: 3em;
+    border-radius: 50rem;
+    background-color: crimson;
+    color: white;
+}
