@@ -1,6 +1,6 @@
 <?php
 $lang = $_GET["lang"];
-$cookieExist = true;
+$cookieExists = true;
 
 if($cookieExists == false){
     header('location: Login.php');
