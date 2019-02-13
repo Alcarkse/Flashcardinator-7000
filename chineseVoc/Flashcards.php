@@ -1,9 +1,8 @@
 <?php
-    $lang = $_GET["lang"];
-    $cookieExists = true;
-    $vocab;
+$lang = $_GET["lang"];
+$cookieExists = false;
 
-    if($cookieExists == false){
+    if($cookieExists == false) {
         header('location: Login.php');
     }
 ?>
