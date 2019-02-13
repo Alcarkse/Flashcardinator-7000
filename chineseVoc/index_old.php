@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Chinese Vocabulary - Jobs</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="_css/style.css">
   <script src="lib.js" charset="utf-8"></script>
   <script src="responsivevoice.js" charset="utf-8"></script>
   <script type="text/javascript">

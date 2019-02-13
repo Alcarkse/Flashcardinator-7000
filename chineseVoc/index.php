@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <button>中国语</button>
-    <button>日本语</button>
+    <button class="highlightButton" id="zh">中国语</button>
+    <button class="highlightButton" id="jp">日本語</button>
 </body>
 </html>
