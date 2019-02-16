@@ -1,0 +1,93 @@
+form {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 1.8em;
+    width: 40%;
+    box-shadow: 0em .3em .8em #00000007;
+    border-radius: 0.5rem;
+    margin-top: 5em;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+form input:not([type="submit"]) {
+    margin: 0.5em 0;
+    padding: 0.7em;
+    background-color: #F1F1F1;
+    border-radius: 0.3rem;
+    border: none;
+    border: 0.2em solid transparent;
+    color: #333;
+    transition: 0.3s;
+    font-family: 'Raleway', sans-serif;
+}
+
+form input:not([type="submit"]):focus {
+    border: 0.2em solid #333;
+}
+
+form h2 {
+    font-family: "Staatliches", sans-serif;
+    color: #222;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    margin: 1em 0;
+}
+
+form .highlightButton {
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    align-self: center;
+    margin: 1.2em 0;
+}
+
+.labelInfoToggle {
+    border-radius: 6rem;
+    background-color: #6194CE;
+    color: white;
+    margin: 0;
+    padding: 0.1em;
+    text-emphasis: none;
+    width: 1.4em;
+    height: 1.4em;
+    position: absolute;
+    right: 0;
+    top: -0.1em;
+}
+.labelInfoToggle:hover {
+    cursor: pointer;
+}
+
+.labelInfoToggle::after {
+    content: '?';
+    position: relative;
+    right: -24%;
+}
+
+.labelInfoToggle.active {
+    padding-bottom: 2em;
+    background: rgb(231, 243, 255);
+    color: #6194CE;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.labelInfoToggle.active::after {
+    content: 'X';
+}
+
+form .moreInfo a.lowFocusButton {
+    display: block;
+    align-self: flex-end;
+}

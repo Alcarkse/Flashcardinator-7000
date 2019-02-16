@@ -13,9 +13,19 @@ src: url(fonts/NotoSansCJKsc-Light.otf);
 }
 
 body {
+    background-color: #eee;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     overflow: hidden;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+main {
+    width: 100vw;
 }
 
 [lang="zh"], [lang="jp"] {
@@ -23,13 +33,13 @@ body {
 }
 
 #languageSelection {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
+    position: relative;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin: 10% 0;
+
 }
 
 #languageSelection a:first-of-type {
@@ -37,13 +47,13 @@ body {
 }
 
 .highlightButton {
-    border: none;
-    padding: 1em 2em;
-    font-size: 3em;
+    padding: 0.8em 1em;
+    font-size: 2em;
     border-radius: 50rem;
     background-color: crimson;
     color: white;
     transition: 0.2s;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .highlightButton:hover {
@@ -52,22 +62,76 @@ body {
 }
 
 
-button:hover {
+button:hover, input[type="submit"]:hover {
     cursor: pointer;
 }
 
-h1 {
-    font-family: "Staatliches", sans-serif;
-    color: #222;
+button, input[type="submit"] {
+    border: none;
 }
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    color: #888;
-    margin: 0 0 2% 2%;
+
+#task {
+    font-size: 1.7em;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin: 5% 0;
 }
-#title {
-    width: 100vw;
-    padding: 2%;
-    margin: 0;
-    background-color: #eee;
+
+a.lowFocusButton {
+    padding: 0.5em 1em 0.6em;
+    background: #6194CE;
+    font-weight: 900;
+    border-radius: 5rem;
+    margin-top: 2em;
+    text-decoration: none;
+}
+
+a.lowFocusButton button {
+    color: white;
+    background: transparent;
+}
+
+#downloadIcon { 
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-image: url('../icons/download_icon.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.7em;
+    position: relative;
+    top: 0.1em;
+}
+
+.moreInfo {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    transition: 0.2s;
+
+    overflow: hidden;
+    font-size: 0.8em;
+    background: rgb(231, 243, 255);
+    color: #6194CE;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    border-top-right-radius: 0;
+    line-height: 1.7em;
+}
+
+.moreInfo.active {
+    max-height: 50em;
+    opacity: 1;
+    padding: 1em;
+}
+
+i {
+    font-style: normal;
 }
