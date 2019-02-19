@@ -1,4 +1,4 @@
 <?php
 
-$location = _POST["driveLocation"]:
+$location = $_POST["driveLocation"];
 

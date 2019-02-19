@@ -2,11 +2,17 @@
 class Vocabulary
 {
 
-    public $URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSu_2sKcQHbib9-wubE7Yw2RRo8Dm0d8IVjJDvt-fnrB21FEgNHYvpopWwtBLhfE5_TTCXk38gjtOiE/pub?output=csv";
+    public $URL = "";
+    // Original Chinese vocab: https://docs.google.com/spreadsheets/d/e/2PACX-1vSu_2sKcQHbib9-wubE7Yw2RRo8Dm0d8IVjJDvt-fnrB21FEgNHYvpopWwtBLhfE5_TTCXk38gjtOiE/pub?output=csv
     public $data = [];
+
+    public $lang;
     
-    public function __construct()
+    public function __construct($userURL, $language = '')
     {
+        $this->URL = $userURL;
+        $this->lang = $language;
+
         //  Read .csv file and store into an array
         if (($handle = fopen($this->URL, "r")) !== FALSE)
         {

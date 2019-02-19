@@ -17,6 +17,7 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     overflow: hidden;
+    
 }
 
 a {
@@ -134,4 +135,16 @@ a.lowFocusButton button {
 
 i {
     font-style: normal;
+}
+
+.devInfo {
+    font-size: 0.8em;
+    background: rgb(231, 255, 245);
+    color: rgb(97, 206, 146);
+    padding: 1em;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    line-height: 1.7em;
+    line-break: strict;
 }
