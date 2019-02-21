@@ -1,0 +1,13 @@
+header {
+    background-color: #fff;
+    box-shadow: 0em -.5em 1em #0000004d;
+    display: flex;
+    font-family: row nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+}

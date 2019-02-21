@@ -1,0 +1,116 @@
+#listSelection {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5em;
+    --lightGrey: rgb(97, 97, 97);
+    --transitionDuration: 0.3s;
+}
+
+#listSelection ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* List Items */
+
+    #listSelection ul li {
+        margin: 1em 0;
+        background-color: #f1f1f1;
+        border-radius: 0.2rem;
+        padding: 0.8em;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* head */
+
+        #listSelection ul li .head {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #listSelection ul li .head span:nth-of-type(2) {
+            font-size: 0.6em;
+            color: var(--lightGrey);
+        }
+
+        #listSelection ul li .head button {
+            transition: var(--transitionDuration);
+        }
+
+        #listSelection ul li .head button.good {
+            width: 5em;
+        }
+
+    /* body */
+        
+        #listSelection ul li .body {
+            font-size: 0.9em;
+            width: 100%;
+            color: var(--lightGrey);
+            overflow: hidden;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+
+            transition: var(--transitionDuration);
+            margin: 0;
+            opacity: 0;
+            max-height: 0;
+        }
+
+        #listSelection ul li .body p {
+            transition: var(--transitionDuration);
+            margin: 0 0.5em;
+        }
+
+        #listSelection ul li .body span:nth-of-type(1) {
+            font-weight: 700;
+            margin-right: 0.5em;
+        }
+
+        #listSelection ul li .body button.danger {
+            align-self: flex-end;
+        }
+
+/* End of List Items */
+
+
+
+#addList {
+    margin: 1em 0;
+    background-color: #f1f1f1;
+    border-radius: 0.2rem;
+    padding: 0.5em 0.8em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*                              *
+
+ *  Animations & Transitions    *
+                                *
+*/
+
+#listSelection ul li.opened .body {
+    max-height: 30em;
+    opacity: 1;
+    margin-top: 2em;
+}
+
+#listSelection ul li.opened .body p {
+    margin: 0.5em;
+}
+
+#listSelection ul li.opened .head button.subtle {
+    transform: rotate(90deg);
+}

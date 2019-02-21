@@ -1,0 +1,32 @@
+@import url('../specifics/buttons.css');
+@import url('../modules/header.css');
+@import url('../modules/listSelection.css');
+@import url('../modules/infobox.css');
+
+#task {
+    font-size: 1.7em;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin: 5% 0;
+}
+
+#downloadIcon { 
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-image: url('../icons/download_icon.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.7em;
+    position: relative;
+    top: 0.1em;
+}
+
+#listSelection {
+    width: 50%;
+    max-width: 30em;
+    position: relative;
+    margin: 2em auto;
+}

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Noto Sans Regular';
+    src: url(fonts/NotoSansCJKsc-Regular.otf);
+}
+@font-face {
+    font-family: 'Noto Sans Light';
+    src: url(fonts/NotoSansCJKsc-Light.otf);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;    
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+main {
+    width: 100vw;
+}
+
+[lang="zh"], [lang="jp"] {
+    font-family: 'Noto Sans Regular';
+}
+
+i {
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Staatliches", sans-serif;
+    color: #222;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #888;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.attachLoader {
+    position: relative;
+}
+
+.attachLoader::after {
+    content:'';
+    display: block;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border: 0.2em solid crimson;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+
+    animation: spin 0.5s linear 0s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

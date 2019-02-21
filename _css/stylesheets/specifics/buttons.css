@@ -1,0 +1,79 @@
+button {
+    color: rgb(231, 243, 255);
+    background-color: #6194CE;
+    padding: 0.5em;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 0.3em;
+
+    transition: 0.2s;
+
+}
+
+button.subtle {
+    color: rgb(97, 97, 97);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button.subtle:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+button.danger {
+    padding: 0.4em 2em;
+    border-radius: 50rem;
+
+    background-color: rgb(222, 222, 222);
+    color: rgb(97, 97, 97);
+}
+
+button.danger:hover {
+    background-color: crimson;
+    color: white;
+}
+
+button.good {
+    background-color: rgb(20, 220, 110);
+    color: rgb(255, 255, 255);
+}
+
+button.good:hover {
+    background-color: rgb(116, 240, 171);
+}
+
+.highlightButton {
+    padding: 0.8em 1em;
+    font-size: 2em;
+    border-radius: 50rem;
+    background-color: crimson;
+    color: white;
+    transition: 0.2s;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.highlightButton:hover {
+    background-color: rgb(240, 80, 112);
+    color: rgb(255, 202, 212);
+}
+
+
+button:hover, input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+button, input[type="submit"] {
+    border: none;
+}
+
+a.lowFocusButton {
+    padding: 0.5em 1em 0.6em;
+    background: #6194CE;
+    font-weight: 900;
+    border-radius: 5rem;
+    margin-top: 2em;
+    text-decoration: none;
+}
+
+a.lowFocusButton button {
+    color: white;
+    background: transparent;
+}
