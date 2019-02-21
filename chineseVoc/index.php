@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <?php include 'common/headStuff.html'; ?>
+        <link rel="stylesheet" href="_css/listSelection.css">
     </head>
 
     <body>
@@ -10,15 +11,16 @@
             <h2>Language Selection</h2>
         </header>
         <main>
-            <p id="task">Choose a language to study.</p>
+            <p id="task">Choose a list.</p>
     
-            <div id="languageSelection">
-                <a href="Flashcards.php?lang=zh">
-                    <button class="highlightButton" id="zh" lang="zh">中国语</button>    
-                </a>
-                <a href="Flashcards.php?lang=jp">
-                    <button class="highlightButton" id="jp" lang="jp">日本語</button>
-                </a>
+            <div id="listSelection">
+                <h1>Saved Lists</h1>
+                <ul>
+                    <li>Japanese 1</li>
+                    <li>Japanese 2</li>
+                    <li>Chinese 1</li>
+                </ul>
+                <div id="addList"><p>Add List</p><input type="text" placeholder="https://drive.google.com/spreadsheet/example.csv"><button>Add</button></div>
             </div>
         </main>
 
