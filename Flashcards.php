@@ -22,7 +22,7 @@ if ( $gotVocabFromLogin ) {
 }
 
 // Index page does not need a language selection screen:
-// Behavior of the flashcards is the same for all languages
+//      --> Behavior of the flashcards is the same for all languages
 
 $userVocab = new Vocabulary($vocabSheetURL, $lang);
 

@@ -24,8 +24,8 @@
                     A link to your vocabulary sheet hosted online. Your vocabolary sheet contains a list of words that you want to revise, along with a coressponding frequency that is automatically calculated depending on your accuracy. If you don't have a vocabulary sheet yet, you can use the template provided below to get started.
                     <a href="ressources/vocab_sheet_template.csv" class="lowFocusButton"><button><span id="downloadIcon"></span>Download Template</button></a>
                 </div>
-                <div class="devInfo">[Dev Build only] Sample Link<br>https://docs.google.com/spreadsheets/d/e/2PACX-1vSu_2sKcQHbib9-wubE7Yw2RRo8Dm0d8IVjJDvt-fnrB21FEgNHYvpopWwtBLhfE5_TTCXk38gjtOiE/pub?output=csv</div>
-                <input required type="text" name="driveLocation" placeholder="e.g. https://docs.google.com/spreadsheets/example..."/>
+                <div class="devInfo"><b>(Dev Build only) Sample Link</b><br>https://docs.google.com/spreadsheets/d/e/2PACX-1vSu_2sKcQHbib9-wubE7Yw2RRo8Dm0d8IVjJDvt-fnrB21FEgNHYvpopWwtBLhfE5_TTCXk38gjtOiE/pub?output=csv</div>
+                <input required type="text" name="driveLocation" placeholder="https://docs.google.com/spreadsheets/example..."/>
                 <input class="highlightButton" type="submit" value="Submit"/>
             </form>
         </main>

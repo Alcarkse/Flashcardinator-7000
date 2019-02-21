@@ -147,4 +147,5 @@ i {
     flex-flow: column nowrap;
     line-height: 1.7em;
     line-break: strict;
+    margin: 0.5em 0;
 }
