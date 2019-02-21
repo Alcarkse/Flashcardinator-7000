@@ -1,0 +1,47 @@
+#listSelection {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+
+    width: 50%;
+    position: relative;
+    margin: 2em auto;
+}
+
+#listSelection ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#listSelection ul li {
+    margin: 1em 0;
+    background-color: #f1f1f1;
+    border-radius: 0.2rem;
+    padding: 0.5em 0.8em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#listSelection button {
+    color: rgb(231, 243, 255);
+    background-color: #6194CE;
+    padding: 0.5em;
+
+    border-radius: 0.3em;
+}
+
+#addList {
+    margin: 1em 0;
+    background-color: #f1f1f1;
+    border-radius: 0.2rem;
+    padding: 0.5em 0.8em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
