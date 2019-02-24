@@ -3,6 +3,8 @@
     <head>
         <?php require_once('resources/templates/headStuff.html') ; ?>
         <link rel="stylesheet" href="_css/stylesheets/pages/index.css">
+        <script src="_javascript/ListManager.js"></script>
+        <script src="_javascript/main.js"></script>
     </head>
 
     <body>
@@ -10,10 +12,10 @@
             <a href="index.php"><h1>Flashcardinator-7000</h1></a>
         </header>
         <main>
-            <p id="task">Choose a list.</p>
     
             <div id="listSelection">
-                <h1>Saved Lists</h1>
+                <h1>Choose a List</h1>
+                <h2>Saved Lists</h2>
                 <ul>
                     <li>
                         <div class="head">
@@ -30,11 +32,21 @@
                         </div>
                     </li>
                 </ul>
-                <h1>Add New List</h1>
-                <div id="addList"><p>Add List</p><input type="text" placeholder="https://drive.google.com/spreadsheet/example.csv"><button>Add</button></div>
+                <h2>Add New List</h2>
+                <div id="addList">
+                    <select name="lang">
+                        <option value="0">Language...</option>
+                        <option value="jp">Japanese</option>
+                        <option value="zh">Chinese</option>
+                    </select>
+                    <input name="listName" type="text" placeholder="List Name">
+                    <input name="link" type="url" placeholder="List URL">
+                    <button>Add</button>
+                </div>
+                <div class="devInfo"><b>Sample Link for debugging:</b><br>https://docs.google.com/spreadsheets/d/e/2PACX-1vSu_2sKcQHbib9-wubE7Yw2RRo8Dm0d8IVjJDvt-fnrB21FEgNHYvpopWwtBLhfE5_TTCXk38gjtOiE/pub?output=csv</div>
             </div>
 
-            <p class="attachLoader"> Loading... (not actually loading, just playing an animation) </p>
+            <!-- <p class="attachLoaderIcon"> Loading... (not actually loading, just playing an animation) </p> -->
         </main>
 
     </body>

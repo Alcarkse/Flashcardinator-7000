@@ -12,9 +12,21 @@
     padding: 0;
 }
 
+#listSelection h1 {
+    text-align: center;
+}
+
+#listSelection button:focus {
+    outline: none;
+}
+
+#listSelection h2 {
+    margin-top: 2em;
+}
+
 /* List Items */
 
-    #listSelection ul li {
+    ul li {
         margin: 1em 0;
         background-color: #f1f1f1;
         border-radius: 0.2rem;
@@ -27,7 +39,7 @@
 
     /* head */
 
-        #listSelection ul li .head {
+        ul li .head {
             width: 100%;
             display: flex;
             flex-flow: row nowrap;
@@ -47,6 +59,17 @@
         #listSelection ul li .head button.good {
             width: 5em;
         }
+
+        #listSelection ul li .head button.good.attachLoaderIcon {
+            color: transparent;
+        }
+        
+        #listSelection ul li .head button.good.attachLoaderIcon::after {
+            border-color: white;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+        }
+
 
     /* body */
         
@@ -83,16 +106,75 @@
 
 
 
-#addList {
+#listSelection #addList {
     margin: 1em 0;
     background-color: #f1f1f1;
     border-radius: 0.2rem;
-    padding: 0.5em 0.8em;
+    padding: 0.5em;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 }
+
+#listSelection #addList button {
+    width: 5em;
+}
+
+#listSelection #addList > * {
+    margin: 0.5em;
+}
+
+select {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.5em 2em 0.5em 0.8em;
+    border: 0.2em solid transparent;
+    border-radius: 0.25rem;
+    flex-grow: 2;
+}
+
+select:focus {
+    outline: none;
+    border-color: #333;
+}
+
+option {
+    padding: 0.5em;
+}
+
+option[value="0"] {
+    color: rgb(97, 97, 97);
+}
+
+#addList input[type="text"] {
+    flex-grow: 4;
+}
+#addList input[type="url"] {
+    flex-grow: 8;
+}
+
+#addList input[type="url"], #addList input[type="text"] {
+    padding: 0.5em 0.8em;
+    background-color: white;
+    border-radius: 0.25rem;
+    border: none;
+    border: 0.2em solid transparent;
+    font-family: 'Raleway', sans-serif;
+
+    transition: 0.3s;
+    color: #333;
+}
+
+#addList input[type="url"]:focus, #addList input[type="text"]:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.invalid {
+    border: 0.2em solid crimson;
+}
+
 
 
 /*                              *

@@ -2,6 +2,7 @@
 @import url('../modules/header.css');
 @import url('../modules/listSelection.css');
 @import url('../modules/infobox.css');
+@import url('../modules/forms.css');
 
 #task {
     font-size: 1.7em;

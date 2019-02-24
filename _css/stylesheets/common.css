@@ -49,11 +49,15 @@ h2 {
     text-transform: uppercase;
 }
 
-.attachLoader {
+b {
+    font-weight: 700;
+}
+
+.attachLoaderIcon {
     position: relative;
 }
 
-.attachLoader::after {
+.attachLoaderIcon::after {
     content:'';
     display: block;
     position: absolute;
@@ -61,7 +65,7 @@ h2 {
     left: 50%;
     width: 1em;
     height: 1em;
-    border: 0.2em solid crimson;
+    border: 0.2em solid white;
     border-top-color: transparent;
     border-bottom-color: transparent;
     border-radius: 50%;
@@ -71,10 +75,10 @@ h2 {
 
 @keyframes spin {
     from {
-        transform: rotate(0deg);
+        transform: translate(-50%, 50%) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg);
+        transform: translate(-50%, 50%) rotate(360deg);
     }
 }
